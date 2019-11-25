@@ -1,0 +1,250 @@
+@import "./baseVar.less";
+/**
+ * 进度条统一样式
+ */
+#nprogress {
+  .bar {
+    background: @spinner-color;
+    height: 3px;
+  }
+
+  .spinner {
+    z-index: 1031;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -70%);
+  }
+
+  .spinner-icon {
+    width: 3rem;
+    height: 3rem;
+    border: solid 3px transparent;
+    border-top-color: @spinner-color;
+    border-left-color: @spinner-color;
+  }
+}
+
+/**
+ * 组件统一样式
+ */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+h1 {
+  font-size: @font-size-21;
+}
+h2 {
+  font-size: @font-size-19;
+}
+h3 {
+  font-size: @font-size-17;
+}
+h4 {
+  font-size: @font-size-15;
+}
+h5 {
+  font-size: @font-size-13;
+}
+h6 {
+  font-size: @font-size-12;
+}
+.component {
+  background: white;
+}
+#app {
+  width: 100vw;
+  overflow-x: hidden;
+  .vux-tab-item {
+    font-size: @font-size-13;
+  }
+}
+
+/**
+ * button
+ */
+body {
+  button.bt-c {
+    color: @theme-button-cancel-font-color;
+    background-color: white;
+    border: 1px solid @theme-button-cancel-border-color;
+    line-height: 26px;
+  }
+  button.bt-s {
+    color: @theme-button-submit-font-color;
+    background-color: @theme-button-background-color;
+    line-height: 28px;
+  }
+  @media screen and (max-width: 340px) {
+    button.weui-btn_mini {
+      font-size: @font-size-13;
+      padding: 0 8px;
+    }
+    button.bt-c {
+      line-height: 24px;
+    }
+    button.bt-s {
+      line-height: 26px;
+    }
+
+  }
+  /* 覆盖 XButton(type="primary") 的背景样式 */
+  .weui-btn_primary {
+    font-size: .85rem;
+    line-height: 2.6;
+    background-image: linear-gradient(-45deg, rgba(0, 104, 217, 1) 0%, rgba(17, 144, 225, 1) 100%);
+    // box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+
+  .weui-btn:after {
+    border: none;
+    border-radius: 0;
+  }
+
+  .weui-cell:before {
+    left: 0;
+  }
+
+  .vux-bg-blur {
+    transition: opacity linear 0s !important;
+  }
+
+  .vux-x-input {
+    //padding: .8rem .2rem .4rem .2rem !important;
+  }
+
+  .weui-input {
+    font-size: .75rem;
+  }
+
+  /**
+   * 重置布局边框为0
+   */
+  .weui-grids::before, .weui-grids::after, .weui-grid::before, .weui-grid::after {
+     border: 0;
+  }
+  .weui-dialog__bd {
+     font-size: @font-size-21;
+  }
+
+   // 步骤条样式
+  .weui-wepay-flow{
+    padding-top: 25px; /* 50/40 */
+  }
+  .weui-wepay-flow__state{
+    background-color:#9b9b9b;
+    box-shadow: 0px 0px 0px 5px #c2c2c2,0px 0px 0px 10px #f2f2f2;
+  }
+  .weui-wepay-flow__li_done .weui-wepay-flow__state{
+    background-color:#2e76d8;
+    box-shadow: 0px 0px 0px 5px #c4d8f4,0px 0px 0px 10px #eaf1fb;
+  }
+  .weui-wepay-flow__title-bottom{
+    top: 26px;
+    color:#585858
+  }
+  .weui-wepay-flow__li_done .weui-wepay-flow__title-bottom{
+    color:#585858
+  }
+  .weui-wepay-flow__line_done .weui-wepay-flow__process{
+    background-color: #d5e4f7;
+  }
+  /**
+   * 弹窗顶部蓝条
+   */
+  .weui-dialog{
+     // padding-top: 4px;
+    //  &::before{
+    //    content: '';
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    right: 0;
+    //    height: 4px;
+    //    background: #2e76d8;
+    // }
+  }
+  .weui-cell__hd {
+    img {
+      display: block;
+      margin-right: .6rem;
+      width: 1.2rem;
+    }
+  }
+  .weui-dialog__ft {
+    // font-size: 0;
+  }
+  .weui-dialog__ft:after {
+    display: none;
+  }
+  .weui-dialog__btn_default {
+    background: #CEE5F8 !important;
+    color: @theme-button-background-color;
+  }
+  .weui-dialog__btn_primary {
+    font-size: .9rem;
+    background-image: none !important;
+    background: @theme-button-background-color !important;
+    color: white;
+  }
+  .weui-btn_primary {
+    background-image: none !important;
+    background: #0D9D54;
+  }
+  .weui-dialog__ft {
+    position: relative;
+    bottom: -2px;
+    background: @theme-button-background-color !important;
+  }
+  .ui-user-center{
+    .bt-c {
+      height: 24px;
+      line-height: 22px;
+      font-size: 12px;
+      bottom: 2px;
+      padding: 0 12px;
+      color: black;
+      border-color: #999;
+    }
+  }
+
+}
+
+/**
+ * 遮罩关闭按钮
+ */
+.close-x {
+    position: absolute;
+    bottom: -58px;
+    width: 1.75rem;
+    height: 1.75rem;
+    color: white;
+    border-radius:100%;
+    text-align: center;
+    border: 0.05rem solid white;
+    left: 50%;
+    transform: translateX(-50%);
+    &::before {
+      content: '';
+      width: 0.8rem;
+      height: 0.05rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display: inline-block;
+      transform: translate(-50%,-50%) rotate(45deg);
+      background: white;
+    }
+    &::after {
+      content: '';
+      width: 0.05rem;
+      height: 0.8rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-top
+      display: inline-block;
+      background: white;
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+  }

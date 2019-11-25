@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>统计蓝灰色</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="打卡系统" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="上班打卡初始界面" transform="translate(-175.000000, -621.000000)">
+            <g id="Group-2-Copy-2" transform="translate(175.000000, 621.000000)">
+                <rect id="Rectangle-3" x="0" y="0" width="26" height="26"></rect>
+                <path d="M12.0382626,3.04565025 C6.96661368,3.52959562 3,7.80157168 3,13 C3,18.5228475 7.4771525,23 13,23 C18.1490927,23 22.3892347,19.1083192 22.93955,14.1058336 L12.0382626,14.1058336 M13,13 L13,3 C18.5228475,3 23,7.4771525 23,13 L13,13 Z M14,12 L21.6347069,12 L21.9450712,12 C21.4839224,7.82838339 18.1716166,4.5160776 14,4.05492878 L14,12 Z" id="Combined-Shape" fill="#9B9B9B"></path>
+            </g>
+        </g>
+    </g>
+</svg>
